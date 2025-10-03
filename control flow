@@ -1,0 +1,17 @@
+num1 = float(input("Enter first number: "))
+symbol = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter second number: "))
+
+if symbol == "+":
+    print("Result:", num1 + num2)
+elif symbol == "-":
+    print("Result:", num1 - num2)
+elif symbol == "*":
+    print("Result:", num1 * num2)
+elif symbol == "/":
+    if num2 != 0:
+        print("Result:", num1 / num2)
+    else:
+        print("Cannot be divided by zero")
+else:
+    print("Invalid symbol")
